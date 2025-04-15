@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    tools:context=".ClassesActivity">
+
+    <!-- Container for class title, description, and other data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Class Image/Icon (Optional) -->
+        <ImageView
+            android:id="@+id/classImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_class_logo"
+            android:contentDescription="Class Icon"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Text container for class title and description -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <!-- Class Title -->
+            <TextView
+                android:id="@+id/className"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class Title"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <!-- Class Description -->
+            <TextView
+                android:id="@+id/classDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short description of the class."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="4dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="10dp"
+                    android:progress="60"
+                    android:max="100"
+                    android:progressTint="@color/purple_500"
+                    android:backgroundTint="#D3D3D3"
+                    android:layout_marginEnd="8dp" />
+
+            <!-- Class Progress/Duration -->
+            <TextView
+                android:id="@+id/classProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60%"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:translationY="-4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

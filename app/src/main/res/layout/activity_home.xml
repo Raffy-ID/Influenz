@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/special_discount"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/background_image" />
+
+    <!-- Header with user info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1000_points"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:id="@+id/tvProductShowcase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_100_produk"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:id="@+id/tvModule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_100_modul"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+    <!-- Special Offer Button -->
+    <Button
+        android:id="@+id/btnSpecialOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spesial_hari_ini"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvModule"
+        tools:ignore="notSibling" />
+
+    <!-- Continue Module Button -->
+    <Button
+        android:id="@+id/btnContinueModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lanjutkan_modul"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorSecondary"
+        android:layout_marginTop="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpecialOffer"/>
+
+    <!-- RecyclerView for Featured Products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFeaturedProducts"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinueModule"
+        android:contentDescription="@string/featured_products_description"/>
+
+    <!-- RecyclerView for All Products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewFeaturedProducts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/view_products_description"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

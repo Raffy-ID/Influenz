@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="start">
+
+    <!-- Profile Image (for received message, optional) -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_profile_logo"
+        android:contentDescription="@string/Profile_image"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"/>
+
+    <!-- Message TextBubble -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_message_bg"
+        android:padding="10dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/john_doe"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Text for the message -->
+        <TextView
+            android:id="@+id/chatMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_how_are_you"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Message timestamp -->
+        <TextView
+            android:id="@+id/chatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_10_30_am"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

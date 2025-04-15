@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header: Judul Masuk -->
+        <TextView
+            android:id="@+id/tvLoginTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Masuk"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="40dp" />
+
+        <!-- Deskripsi singkat -->
+        <TextView
+            android:id="@+id/tvLoginDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aplikasi_terlengkap_untuk_edukasi_komunitas_dan_afiliasi"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Jeda ruang -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <!-- Field Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/button_rounded_gr"
+            android:padding="12dp" />
+
+        <!-- Jeda ruang -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Field Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/kata_sandi"
+            android:inputType="textPassword"
+            android:background="@drawable/button_rounded_gr"
+            android:padding="12dp" />
+
+        <!-- Jeda ruang -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <!-- Link Lupa Kata Sandi -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lupa_kata_sandi"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:padding="8dp" />
+
+        <!-- Jeda ruang -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Tombol Masuk -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/masuk"
+            android:contentDescription="@string/tombol_login_masuk"
+            android:background="@drawable/button_rounded_pu"
+            android:textColor="@android:color/white" />
+
+        <!-- Jeda ruang -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Divider: Atau masuk dengan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tvOr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/atau_masuk_dengan"
+                android:padding="8dp"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <!-- Jeda ruang -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Tombol Google -->
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/google"
+            android:contentDescription="@string/tombol_login_google"
+            android:background="@drawable/button_rounded_pu"
+            android:textColor="@android:color/white"
+            android:drawableStart="@drawable/google_logo"
+            android:drawablePadding="8dp" />
+
+        <!-- Jeda ruang -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <!-- Tombol Facebook -->
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/masuk_dengan_facebook"
+            android:contentDescription="@string/tombol_login_facebook"
+            android:background="@drawable/button_rounded_pu"
+            android:textColor="@android:color/white"
+            android:drawableStart="@drawable/facebook_logo"
+            android:drawablePadding="8dp" />
+
+        <!-- Jeda ruang -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Link Sign Up -->
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daftar"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:padding="8dp" />
+    </LinearLayout>
+</ScrollView>

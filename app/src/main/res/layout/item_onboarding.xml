@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgOnboard"
+        android:layout_width="match_parent"
+        android:layout_height="459dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/onboard_image" />
+
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="62dp"
+        android:layout_marginRight="45dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="212dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="left|center"
+            android:text="@string/judul_onboarding"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="210dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/deskripsi_singkat_mengenai_fitur_atau_informasi_yang_ingin_disampaikan"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
+
+</LinearLayout>

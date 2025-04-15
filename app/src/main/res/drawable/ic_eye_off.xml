@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Garis silang -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M2.81,2.81L1.39,4.22l3.27,3.27C4.09,8.79 4,8.93 4,9c0,3.87 3.13,7 7,7 0.07,0 0.21-0.09 0.72-0.32l3.27,3.27 1.41,-1.41L2.81,2.81z"/>
+    <!-- Mata tertutup -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,6c2.21,0 4,1.79 4,4 0,0.66 -0.18,1.28 -0.5,1.8l2.1,2.1C18.73,13.01 19,12.03 19,11c0,-3.87 -3.13,-7 -7,-7 -1.03,0 -2.01,0.27 -2.9,0.74l2.06,2.06C10.72,6.18 11.34,6 12,6zM12,14c-1.11,0 -2,-0.89 -2,-2 0,-0.35 0.11,-0.68 0.29,-0.96l2.67,2.67C12.68,13.89 12.35,14 12,14z"/>
+</vector>
